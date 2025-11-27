@@ -114,7 +114,7 @@ function initSmoothScroll() {
             
             if (target) {
                 const navbarHeight = document.getElementById('navbar').offsetHeight;
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
                 
                 window.scrollTo({
                     top: targetPosition,
@@ -287,7 +287,7 @@ function showNotification(message, type) {
     // Create notification element
     const notification = document.createElement('div');
     notification.className = 'notification ' + type;
-    notification.innerHTML = message;
+    notification.textContent = message;
     
     // Style the notification
     notification.style.cssText = '\
@@ -354,7 +354,7 @@ function initActiveNavOnScroll() {
             const sectionTop = section.offsetTop - navbarHeight - 100;
             const sectionHeight = section.offsetHeight;
             
-            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
@@ -372,7 +372,7 @@ function initActiveNavOnScroll() {
    Parallax Effect (Subtle)
    =============================================== */
 window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     const heroShapes = document.querySelectorAll('.hero-shape');
     
     heroShapes.forEach(function(shape, index) {

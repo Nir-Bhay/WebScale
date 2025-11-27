@@ -784,6 +784,86 @@ input, textarea {
     font-size: 0.9375rem;
     color: var(--light-text);
     line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.service-features li {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    background: var(--background);
+    color: var(--teal-accent);
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Services Highlight */
+.services-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: var(--background);
+    border-radius: 16px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.highlight-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--teal-accent);
+    opacity: 0.3;
+}
+
+.highlight-content h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 4px;
+}
+
+.highlight-content p {
+    font-size: 0.875rem;
+    color: var(--light-text);
+    margin: 0;
+}
+
+/* Services CTA */
+.services-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-navy) 0%, #2d4a77 100%);
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-top: 60px;
+}
+
+.cta-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin: 0;
 }
 
 /* ===============================================
@@ -895,6 +975,81 @@ input, textarea {
 
 .portfolio-category {
     font-size: 0.875rem;
+    color: var(--teal-accent);
+}
+
+/* ===============================================
+   Testimonials Section
+   =============================================== */
+.testimonials {
+    padding: var(--section-padding) 0;
+    background: var(--white);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--background);
+    padding: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: var(--transition-fast);
+    border: 1px solid #e2e8f0;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.testimonial-quote {
+    margin-bottom: 16px;
+}
+
+.quote-icon {
+    color: var(--teal-accent);
+    opacity: 0.5;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--dark-text);
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal-accent), var(--teal-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.author-info strong {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--dark-text);
+    margin-bottom: 2px;
+}
+
+.author-info span {
+    font-size: 0.8125rem;
     color: var(--teal-accent);
 }
 
@@ -1365,11 +1520,28 @@ input, textarea {
         margin: 0 auto;
     }
     
+    .services-highlight {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px;
+    }
+    
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .services-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 32px;
+    }
+    
     .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1468,6 +1640,10 @@ input, textarea {
     }
     
     .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
     

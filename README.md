@@ -1,10 +1,10 @@
-# WebScale
+# WebSkale
 
-A professional single-page static website for WebScale - a web services company that helps small businesses build their digital presence.
+A professional single-page static website for WebSkale - a web services company that helps small businesses build their digital presence.
 
 ## 🌐 Live Demo
 
-Visit the live website: [WebScale](https://nir-bhay.github.io/WebScale/)
+Visit the live website: [WebSkale](https://webskale.tech/)
 
 ## 🎨 Features
 
@@ -51,7 +51,7 @@ Visit the live website: [WebScale](https://nir-bhay.github.io/WebScale/)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Nir-Bhay/WebScale.git
+git clone https://github.com/Nir-Bhay/WebSkale.git
 ```
 
 2. Open `index.html` in your browser, or use a local server:
@@ -86,4 +86,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-For inquiries, reach out at hello@webscale.com
+For inquiries, reach out at hello@webskale.tech

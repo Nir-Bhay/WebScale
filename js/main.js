@@ -1,5 +1,5 @@
 /* ===============================================
-   WebScale - Main JavaScript
+   WebSkale - Main JavaScript
    =============================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
